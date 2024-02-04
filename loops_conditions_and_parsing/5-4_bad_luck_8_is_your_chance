@@ -6,7 +6,7 @@
 
 count=0
 
-while [ $ct -le 10 ]
+while [ "$i" -le 10 ]
 do 
 	if [ $i -eq 4 ]
 	then
