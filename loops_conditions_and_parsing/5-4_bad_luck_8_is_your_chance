@@ -6,8 +6,20 @@
 
 count=0
 
-while [ $count -eq 3 ]
+while [ $ct -le 10 ]
 do 
+	if [ $i -eq 4 ]
+	then
+	      echo "bad luck"
+        elif [ "$i" -eq 8 ]
+	then 
+	      echo "good luck"
+      else 
+	      echo "Best School"
+	fi
+        i=$(( i + 1 ))	
+done 	
+
 
 
 
