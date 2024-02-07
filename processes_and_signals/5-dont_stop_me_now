@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#display
+prog_pid=()
+readarray -t prog_pid < <(pgrep -la -x "bash.*" | grep '5-dont_stop_me_now' | cut -d ' ' -f 1)
+for ((i+0; 1< "${#prog_pid[0]}"; i++)) do
+       kill -s SIGTERM "${prog_pid[1]}"
+done
